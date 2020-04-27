@@ -1,0 +1,135 @@
+
+gin as: s21600231
+s21600231@peace.handong.edu's password:
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-96-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+  * Management:     https://landscape.canonical.com
+   * Support:        https://ubuntu.com/advantage
+
+
+   5 packages can be updated.
+   0 updates are security updates.
+
+   New release '18.04.4 LTS' available.
+   Run 'do-release-upgrade' to upgrade to it.
+
+   Last login: Mon Apr 27 17:33:28 2020 from 172.18.201.1
+   s21600231@peace:~$ git clone https://github.com/DahyunMoon/PEER
+   Cloning into 'PEER'...
+   remote: Enumerating objects: 80, done.
+   remote: Counting objects: 100% (80/80), done.
+   remote: Compressing objects: 100% (54/54), done.
+   remote: Total 80 (delta 34), reused 57 (delta 24), pack-reused 0
+   Unpacking objects: 100% (80/80), done.
+   Checking connectivity... done.
+   s21600231@peace:~$ cd PEER
+   s21600231@peace:~/PEER$ ls
+   main.c  Makefile  readme.txt  report.txt  report_update.txt  schedule.c  schedule.h  schedule.txt  schedule_update.txt
+   s21600231@peace:~/PEER$ make main
+   gcc  -g -Wall  -c schedule.c
+   gcc  -g -Wall  -o main main.c schedule.o
+   s21600231@peace:~/PEER$ ./main
+
+   Load schedule data to start => choose Menu 16
+   Create new schedule data without load file => choose Menu 1
+
+   -------------------------------Menu--------------------------------
+   1.Create                2.Read                  3.Update
+   4.Delete                5.Update(by major)      6.Delete(by diff)
+   7.List                  8.Search(name)          9.Search(major)
+   10.Search(code)         11.Search(diff)         12.Sort(score)
+   13.Read(data,report)    14.Save(update file)    15.Debug
+   16.Load file            0.Quit
+   -------------------------------------------------------------------
+   Select Menu > 1
+
+   Enter a new schedule.
+   Subject name (in English,no space)> OSS
+   Professor name (in English,no space)> KIM
+   //If file loads, input code number above 50
+   //If no file loads, input code number above 0
+   Code number (integer number) > 1
+   Major number (computer:0, biology:1, nonmajor:2)> 0
+   Homework (in English,no space)> HW
+   Remaining due days (in integer)> 3
+   Difficulty (major:2,non-major:1)> 2
+   Score > 5
+   -------------------------------Menu--------------------------------
+   1.Create                2.Read                  3.Update
+   4.Delete                5.Update(by major)      6.Delete(by diff)
+   7.List                  8.Search(name)          9.Search(major)
+   10.Search(code)         11.Search(diff)         12.Sort(score)
+   13.Read(data,report)    14.Save(update file)    15.Debug
+   16.Load file            0.Quit
+   -------------------------------------------------------------------
+   Select Menu > 2
+
+   Read subject in the list.
+   All schedules.
+   1. [OSS] KIM / code num: 1 / major num: 0 / hw: HW / due days: 3 / difficulty: 2 / score: 5
+
+   Enter a subject name > OSS
+   Schedule info.
+   Name : OSS
+   Professor : KIM
+   Code num : 1
+   Major num : 0
+   Homework : HW
+   Remaining due days : 3
+   Difficulty : 2
+   Score : 5
+   -------------------------------Menu--------------------------------
+   1.Create                2.Read                  3.Update
+   4.Delete                5.Update(by major)      6.Delete(by diff)
+   7.List                  8.Search(name)          9.Search(major)
+   10.Search(code)         11.Search(diff)         12.Sort(score)
+   13.Read(data,report)    14.Save(update file)    15.Debug
+   16.Load file            0.Quit
+   -------------------------------------------------------------------
+   Select Menu > 3
+
+   Update subject in the list.
+   All schedules.
+   1. [OSS] KIM / code num: 1 / major num: 0 / hw: HW / due days: 3 / difficulty: 2 / score: 5
+
+   Enter a subject name to update > OSS
+   Enter a updated info.
+   Homework (in English, no space)> HW2
+   Remaining due days (integer number)> 5
+   -------------------------------Menu--------------------------------
+   1.Create                2.Read                  3.Update
+   4.Delete                5.Update(by major)      6.Delete(by diff)
+   7.List                  8.Search(name)          9.Search(major)
+   10.Search(code)         11.Search(diff)         12.Sort(score)
+   13.Read(data,report)    14.Save(update file)    15.Debug
+   16.Load file            0.Quit
+   -------------------------------------------------------------------
+   Select Menu > 2
+
+   Read subject in the list.
+   All schedules.
+   1. [OSS] KIM / code num: 1 / major num: 0 / hw: HW2 / due days: 5 / difficulty: 2 / score: 7
+
+   Enter a subject name > OSS
+   Schedule info.
+   Name : OSS
+   Professor : KIM
+   Code num : 1
+   Major num : 0
+   Homework : HW2
+   Remaining due days : 5
+   Difficulty : 2
+   Score : 7
+   -------------------------------Menu--------------------------------
+   1.Create                2.Read                  3.Update
+   4.Delete                5.Update(by major)      6.Delete(by diff)
+   7.List                  8.Search(name)          9.Search(major)
+   10.Search(code)         11.Search(diff)         12.Sort(score)
+   13.Read(data,report)    14.Save(update file)    15.Debug
+   16.Load file            0.Quit
+   -------------------------------------------------------------------
+   Select Menu > 0
+
+   s21600231@peace:~/PEER$
+
